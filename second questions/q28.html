@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        function calculateSalary() {
+           
+            let basicSalary = 50000;  
+            let hra = 15000;           
+            let otherAllowances = 10000; 
+
+            let totalMonthlySalary = basicSalary + hra + otherAllowances;
+
+            let annualSalary = totalMonthlySalary * 12;
+
+            console.log("Basic Salary: Rs.", basicSalary);
+            console.log("House Rent Allowance (HRA): Rs.", hra);
+            console.log("Other Allowances: Rs.", otherAllowances);
+            console.log("Total Monthly Salary: Rs.", totalMonthlySalary);
+            console.log("Annual Salary: Rs.", annualSalary);
+
+            document.getElementById("resultBasicSalary").innerHTML = "Basic Salary: Rs. " + basicSalary;
+            document.getElementById("resultHRA").innerHTML = "House Rent Allowance (HRA): Rs. " + hra;
+            document.getElementById("resultOtherAllowances").innerHTML = "Other Allowances: Rs. " + otherAllowances;
+            document.getElementById("resultTotalMonthlySalary").innerHTML = "Total Monthly Salary: Rs. " + totalMonthlySalary;
+            document.getElementById("resultAnnualSalary").innerHTML = "Annual Salary: Rs. " + annualSalary;
+        }
+    </script>
+
+    <h1>Employee Salary Calculator</h1>
+    <button onclick="calculateSalary()">Calculate Salary</button>
+    <div id="results">
+        <p id="resultBasicSalary"></p>
+        <p id="resultHRA"></p>
+        <p id="resultOtherAllowances"></p>
+        <p id="resultTotalMonthlySalary"></p>
+        <p id="resultAnnualSalary"></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let firstnumber=prompt("enter the first number");
+        let secondnumber=prompt("enter the second number");
+
+        firstnumber = parseFloat(firstnumber);
+        secondnumber = parseFloat(secondnumber);  
+
+
+        if(firstnumber>0  && secondnumber>0)
+    {
+        let average= (firstnumber+secondnumber)/2;
+
+        console.log("The average of", firstnumber, "and", secondnumber, "is:", average);
+    }
+    else {
+    console.log("Error: Both numbers must be positive.");
+}
+        </script>
+</body>
+</html>
